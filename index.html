@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <style>
-      .platform-logo{display:block;width:82px;height:82px;object-fit:contain;margin:28px 0 22px}.platform-logo-light{width:74px;height:74px;margin:0 0 18px}.platform-card p{max-width:260px}.platform-card:hover .platform-logo{transform:scale(1.06);transition:transform .2s ease}
+      .platform-logo{display:block;width:82px;height:82px;object-fit:contain;margin:28px 0 22px}.platform-logo-light{width:74px;height:74px;margin:0 0 18px}.platform-card{position:relative;overflow:hidden}.platform-card:hover .platform-logo{transform:scale(1.06);transition:transform .2s ease}.shape{position:absolute;pointer-events:none}.shape-ring{width:92px;height:92px;border:1px solid #58b8c7;border-radius:50%;right:-26px;top:-26px}.shape-dots{width:52px;height:52px;right:22px;top:18px;background-image:radial-gradient(#8ed2dd 1.5px,transparent 1.5px);background-size:10px 10px;opacity:.8}.shape-line{width:120px;height:1px;right:-20px;top:44px;background:#58b8c7;transform:rotate(-32deg);box-shadow:0 12px #58b8c755,0 24px #58b8c733}
     </style>
   </head>
   <body>
@@ -51,9 +51,9 @@
       <section class="now wrap" id="platforms">
         <div class="section-heading"><p class="eyebrow">01 / PLATFORMS</p><h2>活跃平台</h2><p class="heading-note">在不同平台留下足迹，分享正在学习与创造的事。</p></div>
         <div class="now-grid">
-          <a class="now-card featured platform-card" href="https://space.bilibili.com/409639591?spm_id_from=333.1007.0.0" target="_blank" rel="noopener noreferrer"><div class="card-top"><span class="tag">PLATFORM 01</span><span class="date">ACTIVE ↗</span></div><img class="platform-logo" src="https://cdn.simpleicons.org/bilibili/102b3f" alt="Bilibili" /><p>分享学习记录、创作过程和生活中的灵感片段。</p><span class="arrow-link">访问平台 <span>↗</span></span></a>
-          <a class="now-card weather platform-card" href="https://github.com/Lucario-Juy" target="_blank" rel="noopener noreferrer"><img class="platform-logo platform-logo-light" src="https://cdn.simpleicons.org/github/bdeff3" alt="GitHub" /><div><span class="tag">PLATFORM 02</span><p>存放网站、代码实验、AI 应用探索和 Blender 学习项目。</p></div><span class="weather-time">VISIT PROFILE ↗</span></a>
-          <a class="now-card small-note platform-card" href="https://xhslink.cn/o/6RiPntD6ege" target="_blank" rel="noopener noreferrer"><span class="tag">PLATFORM 03</span><img class="platform-logo" src="https://cdn.simpleicons.org/xiaohongshu/102b3f" alt="小红书" /><p>记录旅行、阅读、日常观察，以及关于路卡利欧的文字与创作。</p><span class="tiny-label">VISIT PROFILE ↗</span></a>
+          <a class="now-card featured platform-card" href="https://space.bilibili.com/409639591?spm_id_from=333.1007.0.0" target="_blank" rel="noopener noreferrer"><i class="shape shape-ring"></i><div class="card-top"><span class="tag">PLATFORM 01</span><span class="date">ACTIVE ↗</span></div><img class="platform-logo" src="https://cdn.simpleicons.org/bilibili/102b3f" alt="Bilibili" /><span class="arrow-link">访问平台 <span>↗</span></span></a>
+          <a class="now-card weather platform-card" href="https://github.com/Lucario-Juy" target="_blank" rel="noopener noreferrer"><i class="shape shape-dots"></i><img class="platform-logo platform-logo-light" src="https://cdn.simpleicons.org/github/bdeff3" alt="GitHub" /><span class="tag">PLATFORM 02</span><span class="weather-time">VISIT PROFILE ↗</span></a>
+          <a class="now-card small-note platform-card" href="https://xhslink.cn/o/6RiPntD6ege" target="_blank" rel="noopener noreferrer"><i class="shape shape-line"></i><span class="tag">PLATFORM 03</span><img class="platform-logo" src="https://cdn.simpleicons.org/xiaohongshu/102b3f" alt="小红书" /><span class="tiny-label">VISIT PROFILE ↗</span></a>
         </div>
       </section>
 
