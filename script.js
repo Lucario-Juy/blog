@@ -12,3 +12,13 @@ const updateNav = () => {
 
 window.addEventListener('scroll', updateNav, { passive: true });
 updateNav();
+
+const videoModal = document.querySelector('#videoModal');
+const workVideo = document.querySelector('#workVideo');
+const blenderWork = document.querySelector('.blender-work');
+const closeVideo = () => { videoModal.classList.remove('open'); videoModal.setAttribute('aria-hidden','true'); workVideo.pause(); workVideo.removeAttribute('src'); workVideo.load(); document.body.style.overflow = ''; };
+const openVideo = () => { workVideo.src = blenderWork.dataset.video; videoModal.classList.add('open'); videoModal.setAttribute('aria-hidden','false'); document.body.style.overflow = 'hidden'; };
+blenderWork?.addEventListener('click', openVideo);
+blenderWork?.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openVideo(); } });
+videoModal?.querySelectorAll('[data-close-video]').forEach(el => el.addEventListener('click', closeVideo));
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && videoModal?.classList.contains('open')) closeVideo(); });
